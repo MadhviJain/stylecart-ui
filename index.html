@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StyleCart – Fashion E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🛍️ StyleCart</h1>
+    <p>Trendy. Affordable. Stylish.</p>
+
+    <div class="cart-icon">
+      🛒 Cart: <span id="cart-count">0</span>
+    </div>
+
+    <!-- View Cart Button -->
+    <button onclick="toggleCart()" class="view-cart-btn">View Cart</button>
+  </header>
+
+  <!-- Product Grid -->
+  <main class="product-grid">
+    <div class="product-card">
+      <div class="product-image">👗</div>
+      <div class="product-info">
+        <div class="product-title">Floral Dress</div>
+        <div class="price">₹799</div>
+        <button onclick="addToCart('Floral Dress', 799)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">👕</div>
+      <div class="product-info">
+        <div class="product-title">Basic T-Shirt</div>
+        <div class="price">₹399</div>
+        <button onclick="addToCart('Basic T-Shirt', 399)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">👟</div>
+      <div class="product-info">
+        <div class="product-title">Running Shoes</div>
+        <div class="price">₹1299</div>
+        <button onclick="addToCart('Running Shoes', 1299)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">👜</div>
+      <div class="product-info">
+        <div class="product-title">Leather Bag</div>
+        <div class="price">₹1899</div>
+        <button onclick="addToCart('Leather Bag', 1899)">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Cart Section -->
+  <section id="cart-section" class="cart-section">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 StyleCart. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
